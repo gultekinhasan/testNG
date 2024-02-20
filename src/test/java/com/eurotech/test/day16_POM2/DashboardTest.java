@@ -81,9 +81,9 @@ public class DashboardTest extends TestBase {
         driver.get(ConfigurationReader.get("url"));
         loginPage.loginAsTeacher();
         Assert.assertEquals(dashboardPage.welcomeMsg.getText(),"Welcome Teacher");
-        dashboardPage.navigateToMenu("All Posts");
+        dashboardPage.dashboardMenu("All Posts");
         Assert.assertEquals(driver.getCurrentUrl(),"http://92.205.106.232/posts");
-        dashboardPage.navigateToMenu("Developers");
+        dashboardPage.dashboardMenu("Developers");
         Assert.assertEquals(driver.getCurrentUrl(),"http://92.205.106.232/profiles");
     }
     @Test
@@ -93,10 +93,10 @@ public class DashboardTest extends TestBase {
         Assert.assertEquals(dashboardPage.welcomeMsg.getText(),"Welcome Teacher");
         BrowserUtils.waitFor(1);
         //BrowserUtils.hover(dashboardPage.myAccount);
-        dashboardPage.navigateToSubMenu("My Posts");
+        dashboardPage.dashboardMenu("My Posts");
         Assert.assertEquals(driver.getCurrentUrl(),"http://92.205.106.232/posts");
         //BrowserUtils.hover(dashboardPage.myAccount);
-        dashboardPage.navigateToSubMenu("Logout");
+        dashboardPage.dashboardMenu("Logout");
         Assert.assertTrue(driver.getCurrentUrl().contains("login"));
     }
 }

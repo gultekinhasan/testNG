@@ -22,8 +22,8 @@ public abstract class BasePage { // Abstraction
     public WebElement developers;
     @FindBy(id = "navbar-menu-list2-item3-text")
     public  WebElement myAccount;
-//    @FindBy(id = "dashboard-edit-container")
-//    public List<WebElement> altMenu;
+    @FindBy(id = "dashboard-edit-container")
+    public List<WebElement> altMenu;
 
     public void navigateToMenu(String menuName){
         Driver.get().findElement(By.xpath("//*[text()='"+ menuName+"']")).click();

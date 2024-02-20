@@ -1,0 +1,80 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- how to run spesific package-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--    <test name="smoke test">-->
+<!--        <packages>-->
+<!--            <package name="com.eurotech.test.day18_extentReport_screenshot">-->
+<!--            </package>-->
+<!--        </packages>-->
+<!--    </test>-->
+<!--</suite>-->
+
+        <!-- how to run more than one package-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--<test name="smoke test">-->
+<!--    <packages>-->
+<!--        <package name="com.eurotech.test.day18_extentReport_screenshot">-->
+<!--        </package>-->
+<!--        <package name="com.eurotech.test.day15_POM1">-->
+<!--        </package>-->
+<!--    </packages>-->
+<!--</test>-->
+<!--</suite>-->
+
+<!-- how to run all packages-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--    <test name="smoke test">-->
+<!--        <packages>-->
+<!--            <package name="com.eurotech.test.*">-->
+<!--            </package>-->
+<!--        </packages>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!-- how to run one class-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--    <test name="smoke test">-->
+<!--        <classes>-->
+<!--            <class name="com.eurotech.test.day15_POM1.LoginTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+        <!-- how to run more than one class-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--<test name="smoke test">-->
+<!--    <classes>-->
+<!--        <class name="com.eurotech.test.day15_POM1.LoginTest"></class>-->
+<!--        <class name="com.eurotech.test.day14_propertiesFile_singleton.SingletonTest"></class>-->
+<!--    </classes>-->
+<!--</test>-->
+<!--</suite>-->
+
+<!-- how to run specific test in the class-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--    <test name="smoke test">-->
+<!--        <classes>-->
+<!--            <class name="com.eurotech.test.day16_POM2.DashboardTest">-->
+<!--                <methods>-->
+<!--                    <include name="testNavigate"> </include>-->
+<!--                    <include name="testNavigate3"> </include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
+
+<!-- how to run all test cases in one class without one-->
+<!--<suite name="eurotech Automation" verbose="1">-->
+<!--    <test name="smoke test">-->
+<!--        <classes>-->
+<!--            <class name="com.eurotech.test.day16_POM2.DashboardTest">-->
+<!--                <methods>-->
+<!--                    <exclude name="testNavigate"></exclude>-->
+<!--                    <exclude name="testNavigate3"></exclude>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->

@@ -59,10 +59,10 @@ public class DashboardTest2 extends TestBase {
         loginPage.loginAsTeacher();
         Assert.assertEquals(dashboardPage.welcomeMsg.getText(),"Welcome Teacher");
         BrowserUtils.waitFor(1);
-        dashboardPage.navigateToSubMenu("My Posts");
+        dashboardPage.dashboardMenu("My Posts");
         BrowserUtils.waitFor(3);
         Assert.assertTrue(postPage.submitBtn.isDisplayed());
-        dashboardPage.navigateToSubMenu("Logout");
+        dashboardPage.dashboardMenu("Logout");
         Assert.assertTrue(loginPage.logoutCheck.isDisplayed());
     }
     @Test
@@ -81,7 +81,7 @@ public class DashboardTest2 extends TestBase {
         driver.get(ConfigurationReader.get("url"));
         loginPage.loginAsStudent();
         Assert.assertEquals(dashboardPage.welcomeMsg.getText(), "Welcome Jack");
-        dashboardPage.navigateToSubMenu("My Posts");
+        dashboardPage.dashboardMenu("My Posts");
         String titleText = "POM";
         String postText = "Page Object Model, also known as POM, " +
                 "is a design pattern in Selenium that creates an object " +
